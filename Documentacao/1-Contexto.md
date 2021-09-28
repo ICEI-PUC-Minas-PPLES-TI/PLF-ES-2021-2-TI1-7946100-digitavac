@@ -14,5 +14,6 @@
 ## Público-Alvo
 
 > O produto é destinado a qualquer indivíduo que gostaría de um de cartão de vacinação digitalizado, de um novo informativo sobre campanhas e datas de vacinação. Como também para profissionais de saúde que necessitam dessas informações de maneira rápida e precisa.
+> 
 > Há enfoque especial para os pais que possuem filhos menores de idade e gostariam de facilitar a gestão do cartão de vacina dos últimos, este público possui faixa etária em torno de 25 a 40 anos. 
  
