@@ -1,11 +1,11 @@
 # Introdução
 
 ## Problema
-> O problema que o projeto visa solucionar é o da falta de conhecimento da população quanto às vacinas que devem ser tomadas, quando e onde. O acompanhamento das vacinações em papel é prejudicial tanto ao cidadão quanto ao profissional de saúde, visto que torna difícil a junção e localização das informações.
+> O problema que o projeto visa solucionar é a falta de conhecimento da população quanto às vacinas que devem ser tomadas, quando e onde serão aplicadas. O acompanhamento das vacinações em papel é prejudicial tanto para cidadão quanto para profissional de saúde, visto que torna difícil a compilação e localização das informações.
 
 ## Objetivos
 
-> Desenvolver uma plataforma com finalidade de digitalizar o cartão de vacina. Possibilitando o gerenciamento do histórico, agendamento de futuras vacinas, além de alertas sobre campanhas de vacinação e informações sobre o assunto. 
+> Desenvolver uma plataforma de fácil uso com finalidade de digitalizar o cartão de vacina. Possibilitando o gerenciamento do histórico, agendamento de futuras vacinas, além de alertas sobre campanhas de vacinação e informações sobre o assunto.
 
 ## Justificativa
 
@@ -14,4 +14,5 @@
 ## Público-Alvo
 
 > O produto é destinado a qualquer indivíduo que gostaría de um de cartão de vacinação digitalizado, de um novo informativo sobre campanhas e datas de vacinação. Como também para profissionais de saúde que necessitam dessas informações de maneira rápida e precisa.
+> Há enfoque especial para os pais que possuem filhos menores de idade e gostariam de facilitar a gestão do cartão de vacina dos últimos, este público possui faixa etária em torno de 25 a 40 anos. 
  
