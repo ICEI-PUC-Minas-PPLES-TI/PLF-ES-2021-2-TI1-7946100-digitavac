@@ -1,16 +1,17 @@
 # Gerenciamento de Projeto
 
-> Descreva aqui a metodologia de trabalho do grupo para atacar o
-> problema.
+> Para o desenvolvimento do projeto a equipe está utlizando metodologia ágil Scrum. 
+> Aplicando inspeções periódicas a partir dos sprints reviews; e adaptando o projeto de acordo com as necessidades e modificações dos requisitos. 
 
 ## Divisão de Papéis
 
-> Apresente a divisão de papéis entre os membros do grupo.
->
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+> <strong>Product Owner:</strong> Veridiana Santos <br>
+> <strong> Scrum Master:</strong> Matheus Andrade <br>
+> <strong>Dev Team:</strong> 
+> > * Fabio Silva
+> > * Giovane Diniz
+> > * Matheus Silva
+> > * Thiago Mota
 
 ## Processo
 
