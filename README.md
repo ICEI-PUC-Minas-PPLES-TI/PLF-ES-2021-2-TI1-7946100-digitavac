@@ -6,7 +6,7 @@ Desenvolver uma plataforma com finalidade de digitalizar o cartão de vacina. Po
 ## Alunos integrantes da equipe
 
 * Fabio Silva
-* Giovane Alves De Sousa Diniz
+* Giovane Diniz
 * Matheus Andrade
 * Matheus Silva
 * Thiago Mota
