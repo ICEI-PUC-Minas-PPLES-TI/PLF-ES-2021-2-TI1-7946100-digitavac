@@ -9,7 +9,7 @@
 
 ## Justificativa
 
-> O desenvolvimento do projeto é justificável devido a falta de controle do cidadão sobre seu histórico de vacinação. Há dificuldade, ao longo da vida de um indivíduo, de manter o cadastro das vacinas de maneira analógica e padronizada. Ademais, o aplicativo possibilitará maior difusão das informações relativas às vacinas.
+> O desenvolvimento do projeto é justificável devido a falta de controle do cidadão sobre seu histórico de vacinação. Há dificuldade, ao longo da vida de um indivíduo, de manter o cadastro das vacinas de maneira padronizada e eficiente em documentos físicos. Ademais, o aplicativo possibilitará maior difusão das informações relativas às vacinas.
 
 ## Público-Alvo
 
