@@ -64,7 +64,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID    | Restrição                                             |
 |------|-------------------------------------------------------|
-|RE-001| O programa deve ser implementado em linguagem de programação HTML/CSS e JavaScript. |
+|RE-001| O programa deve ser implementado em HTML/CSS e JavaScript. |
 |RE-002| O projeto deverá ser entregue no final do semestre letivo. |
 |RE-003| A equipe não pode subcontratar o desenvolvimento do trabalho. |
 
