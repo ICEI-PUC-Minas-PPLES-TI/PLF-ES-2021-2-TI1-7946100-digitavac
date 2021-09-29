@@ -40,54 +40,37 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+As tabelas que se seguem apresentam os requisitos funcionais e não funcionais, estes detalham o escopo do projeto.
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
-
+|ID     | Descrição do Requisito  |Prioridade |
+|-------|-------------------------|----|
+|RF-001| O sistema deve prover o cadastro do usuário contendo as entradas: nome, e-mail e senha. | ESSENCIAL | 
+|RF-002| O sistema deve prover o cadastro de informações usuário contendo as entradas:  idade, sexo, tipo sanguíneo, alergias. |  ALTA |
+|RF-003| O sistema deve prover o cadastro do histórico de vacinas do usuário. O cadastro deve possibilitar as entradas: vacina aplicada, data de aplicação, data da próxima dose (se houver), observações (campo aberto - local, cidade, etc). | ESSENCIAL |
+|RF-004| O sistema deve prover o cadastro do nome e data das próximas vacinas a serem aplicadas no usuário. | ALTA |
+|RF-005| O sistema deve conter um calendário com marcação das futuras doses já cadastradas. | ALTA |
+|RF-006| O sistema deve indicar as próximas doses cadastradas com antecedência de 7 dias e no dia da vacinação. O aviso deve ser dado por meio de mensagem pop-up e/ou email. | MÉDIA |
+|RF-007| O sistema deve informar sobre as campanhas de vacinação que estão em andamento ou vão começar. | MÉDIA |
+|RF-008| O sistema deve prover um menu de configurações. | MÉDIA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O layout deve ser responsivo possibilitando uma experiência de usuário completa em dispositivos desktops e mobile. | ALTA |
+|RNF-002| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge). | ALTA |
+|RNF-003| O site deve ser publicado em um ambiente acessível publicamente na Internet (Repl.it, GitHub Pages, Heroku). | ALTA |
 
-> Com base nas Histórias de Usuário, enumere os requisitos da sua
-> solução. Classifique esses requisitos em dois grupos:
->
-> - [Requisitos Funcionais
->   (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
->   correspondem a uma funcionalidade que deve estar presente na
->   plataforma (ex: cadastro de usuário).
->
-> - [Requisitos Não Funcionais
->   (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
->   correspondem a uma característica técnica, seja de usabilidade,
->   desempenho, confiabilidade, segurança ou outro (ex: suporte a
->   dispositivos iOS e Android).
->
-> Lembre-se que cada requisito deve corresponder à uma e somente uma
-> característica alvo da sua solução. Além disso, certifique-se de que
-> todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|ID    | Restrição                                             |
+|------|-------------------------------------------------------|
+|RE-001| O programa deve ser implementado em linguagem de programação HTML/CSS e JavaScript. |
+|RE-002| O projeto deverá ser entregue no final do semestre letivo. |
+|RE-003| A equipe não pode subcontratar o desenvolvimento do trabalho. |
 
-
-> Enumere as restrições à sua solução. Lembre-se de que as restrições
-> geralmente limitam a solução candidata.
-> 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
