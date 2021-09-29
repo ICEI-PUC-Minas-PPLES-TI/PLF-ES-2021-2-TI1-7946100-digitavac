@@ -8,27 +8,18 @@
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em
-se desenvolver profissionalmente através de um mestrado fora do país,
-pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está
-buscando uma agência que o ajude a encontrar universidades na Europa
-que aceitem alunos estrangeiros.
+João Paulo tem 25 anos. É analista de sistemas e trabalha desde os 23 no mercado.
+Pensa que quanto mais puder automatizar e digitalizar as coisas em sua vida melhor. Gosta de tocar violão e tem muitos amigos.
+
+Mariana Alves tem 33 anos, é mãe de 3 filhos e é formada como engenheira civil, mas atualmente não exerce a profissão, cuidando apenas da casa e dos filhos. Para ela é importante gerenciar as atividades e compromissos dos filhos. Tem como hobby ler e planeja conhecer a europa.
+
+José Marinaldo tem 65 anos. É avô de 3 netas lindas e professor de música aposentado. Para ele é difícil acompanhar todos os compromissos de saúde que tem uma vez que campanhas de vacinação ou de prevenção a doenças ou incentivos a exercícios nem sempre chegam nele no tempo adequado. Seu sonho é tocar com Chico Buarque.
 
 
-> Enumere e detalhe as personas da sua solução. Para
-> tanto, baseie-se tanto nos documentos disponibilizados na disciplina
-> e/ou nos seguintes links:
->
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-> Lembre-se que você deve ser enumerar e descrever precisamente e
-> personalizada todos os clientes ideais que sua solução almeja.
+Marcos Palheiros, 33 anos. Engenheiro Elétrico. Bem sucedido empresário de um pequeno negócio de softwares embarcados.  Ele perde com frequência as coisas. Não usa chaves e sim uma fechadura biométrica para evitar inconvenientes. Não tem registro médicos detalhados em papéis, mas cuida bem da saúde. Seu hobby é pedalar e disputa com os colegas que faz as melhores corridas ao longo da semana a partir do aplicativo Strava.
+
+
+Maria Santos, 22 anos. Estudante universitária de direito. Vive da ajuda que recebe dos pais. Usa apps e sites para gerenciar tudo em sua vida.Seu hobby é costurar e só pensa em se formar. 
 
 ## Histórias de Usuários
 
