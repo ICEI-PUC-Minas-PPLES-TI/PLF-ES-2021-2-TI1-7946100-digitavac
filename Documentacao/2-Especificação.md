@@ -2,9 +2,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Contexto.md"> Documentação de Contexto</a></span>
 
-> Apresente uma visão geral do que será abordado nesta parte do
-> documento, enumerando as técnicas e/ou ferramentas utilizadas para
-> realizar a especificações do projeto
+O problema foi definido de forma exata e os pontos importantes foram feitos através de entrevistas com usuários por meio de entrevista e observação. Tudo de relevante nesse processo culminou na criação das personas e histórias de usuários.
 
 ## Personas
 
