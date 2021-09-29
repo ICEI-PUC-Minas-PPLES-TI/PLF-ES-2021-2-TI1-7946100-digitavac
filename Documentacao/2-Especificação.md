@@ -22,10 +22,11 @@ Pensa que quanto mais puder automatizar e digitalizar as coisas em sua vida melh
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`        |PARA ... `MOTIVO/VALOR`                                  |
-|--------------------|-------------------------------------------|---------------------------------------------------------|
-|João Paulo          | Registrar minhas vacinas                  | Para ter acesso as vacinas que ja tomou de forma digital|
-|Mariana Alves       | Lembrar de tomar as vacinas no tempo certo| Permitir que possam administrar contas                  |
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`               |PARA ... `MOTIVO/VALOR`                                  |
+|--------------------|--------------------------------------------------|----------------------------------------------------------------------------------------|
+|João Paulo          | Registrar minhas vacinas                         | Para ter acesso as vacinas que ja tomou de forma digital                               |
+|Mariana Alves       | Ter acesso as vacinas que tomou em um único lugar| tenho vários cartões de vacina e gostaria de centralizar isso                          |
+|José Marinaldo      |Receber notícias sobre campanhas de vacinação     |Os canais que são divulgados as campanhas são muitos e nem sempre chega até mim em tempo hábil |
 
 > Apresente aqui as histórias de usuário que são relevantes para o
 > projeto de sua solução. As Histórias de Usuário consistem em uma
