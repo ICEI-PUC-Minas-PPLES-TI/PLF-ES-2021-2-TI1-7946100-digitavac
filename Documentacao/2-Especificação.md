@@ -23,10 +23,10 @@ Maria Santos, 22 anos. Estudante universitária de direito. Vive da ajuda que re
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`        |PARA ... `MOTIVO/VALOR`                                  |
+|--------------------|-------------------------------------------|---------------------------------------------------------|
+|João Paulo          | Registrar minhas vacinas                  | Para ter acesso as vacinas que ja tomou de forma digital|
+|Mariana Alves       | Lembrar de tomar as vacinas no tempo certo| Permitir que possam administrar contas                  |
 
 > Apresente aqui as histórias de usuário que são relevantes para o
 > projeto de sua solução. As Histórias de Usuário consistem em uma
