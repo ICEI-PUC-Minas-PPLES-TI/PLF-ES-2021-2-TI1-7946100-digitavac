@@ -27,6 +27,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |João Paulo          | Registrar minhas vacinas                         | Para ter acesso as vacinas que ja tomou de forma digital                               |
 |Mariana Alves       | Ter acesso as vacinas que tomou em um único lugar| tenho vários cartões de vacina e gostaria de centralizar isso                          |
 |José Marinaldo      |Receber notícias sobre campanhas de vacinação     |Os canais que são divulgados as campanhas são muitos e nem sempre chega até mim em tempo hábil |
+|Mariana Alves       |Poder manter um registro dos meus filhos digital  |O cartão de vacina em papel pode ser perdido e é limitado                               |
+|Marcos Palheiros    |Não perder os registros de vacinação que tomei    |Porque cartões de papéis são fáceis de perder enquanto o digital está sempre disponível |
+|Maria Santos | Ter acesso ao cartão de vacina tanto no desktop quanto no celular | Poder acessar de forma fácil o cartão de vacina quando precisar |
+
 
 > Apresente aqui as histórias de usuário que são relevantes para o
 > projeto de sua solução. As Histórias de Usuário consistem em uma
