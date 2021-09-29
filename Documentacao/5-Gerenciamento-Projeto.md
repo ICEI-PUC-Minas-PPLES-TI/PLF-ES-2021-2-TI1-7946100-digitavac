@@ -1,7 +1,7 @@
 # Gerenciamento de Projeto
 
 > Para o desenvolvimento do projeto a equipe está utlizando metodologia ágil Scrum. 
-> Aplicando inspeções periódicas a partir dos sprints reviews; e adaptando o projeto de acordo com as necessidades e modificações dos requisitos. 
+> Aplicando inspeções periódicas a partir dos sprints reviews semanais; e adaptando o projeto de acordo com as necessidades e modificações dos requisitos. 
 
 ## Divisão de Papéis
 
@@ -15,37 +15,29 @@
 
 ## Processo
 
-> Coloque  informações sobre detalhes da implementação do Scrum seguido
-> pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar
-> o andamento do projeto, a execução das tarefas e o status de desenvolvimento
-> da solução.
+> A equipe atua em sprints semanais para as incrementações do produto. 
+> Reuniões semanais abordam as atividades de Sprint Planing, Sprint Review e Sprint Retrospective; repectivamente definindo o backlog da proxima sprint, necessidades de adaptação do produto e do processo.   
 > 
-> **Links Úteis**:
-> - [Tutorial Trello](https://trello.com/b/8AygzjUA/tutorial-trello)
-> - [Gestão ágil de projetos com o Trello](https://www.youtube.com/watch?v=1o9BOMAKBRE)
-> - [Gerência de projetos - Trello com Scrum](https://www.youtube.com/watch?v=DHLA8X_ujwo)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+> A equipe está utilizando o Miro e um Kanban Board no GitHub para o gerenciamento das tarefas.
+> O [Miro](https://miro.com/app/board/o9J_lxqL3Ls=/) vem sendo utilizado como ferramenta de brainstorm, possibilitando a aglutinação das ideias dos componentes de maneira democrática por meio de Post-its, durante as reuniões e Daily Scrums. Além disso o Miro é a principal ferramenta para a construção da Persona, concepção do usuário final e das características do produto nas atividades dos sprints.
+> 
+![Persona](images/PersonaMiro.jpg)
+<br><strong>Imagem:</strong> Construção da persona no Miro utilizando Post-it.
+> 
+> O [Kanban Board](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7946100-projeto-saude/projects/1) criado no GitHub, vem sendo utilizado para a designação das tarefas. O mesmo também executa o papel de Backlog de cada sprint semanal.
+> 
+![Kanban](images/kanban.jpg)
+> 
+> ### Estrutura do Kanban Board:
+> * <strong>To do:</strong> Tarefas a serem executadas definidas no Sprint Planing, representam o Backlog do próximo sprint.
+> * <strong>In progress:</strong> Tarefas que estão sendo executadas.
+> * <strong>Done:</strong> Tarefas concluidas, serão debatidas no próximo Sprint Review e Sprint Retrospective.
+>  
 
 ## Ferramentas
 
-As ferramentas empregadas no projeto são:
+A tabela a seguir apresenta as ferramentas empregadas no projeto.
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de diagramação
 
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
 
-> Liste quais ferramentas foram empregadas no desenvolvimento do
-> projeto, justificando a escolha delas, sempre que possível.
-> 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [![Slack](images/slack.jpg)](https://slack.com/)
-> - [![Trello](images/trello.png)](https://trello.com/)
-> 
-> - [![Microsof Project](images/project.png)](https://products.office.com/pt-br/project/project-and-portfolio-management-software)
-> - [![Redbooth](images/redbooth.png)](https://redbooth.com/)
+
