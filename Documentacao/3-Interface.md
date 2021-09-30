@@ -18,7 +18,3 @@
 ![Exemplo de Wireframe](images/wireframe-example.png)
 
 > O protótipo interativo do projeto pode ser acessado [aqui](https://www.figma.com/proto/cXcXpCFuI0zA7V5Eev4g8R/Tela-inicial?node-id=1%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A3)
-> 
-> **Links Úteis**:
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
