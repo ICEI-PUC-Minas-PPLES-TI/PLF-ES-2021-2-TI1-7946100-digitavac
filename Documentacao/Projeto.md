@@ -1,19 +1,22 @@
 # Informações do Projeto
 `TÍTULO DO PROJETO`  
-
-Trabalho Interdisciplinar - Aplicacões Web
+>Trabalho Interdisciplinar - Aplicacões Web
 
 `CURSO`
+>Engenharia de Software - PUC Minas
 
 `SEMESTRE`
+>Primeiro semestre
 
 ## Participantes
 
 Os membros do grupo são: 
-- Fulano da Silva
-- Ciclano Albuquerque
-
-> Inclua a lista dos membros da equipe com seus nomes completos.
+- Fábio Henrique
+- Giovane Alves
+- Matheus Fontes
+- Matheus Machado
+- Thiago Soares
+- Veridiana Santos
 
 # Estrutura do Documento
 
