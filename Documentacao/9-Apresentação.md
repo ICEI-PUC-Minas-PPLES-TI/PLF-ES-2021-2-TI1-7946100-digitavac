@@ -28,3 +28,5 @@
 > - Entrevista qualitativa realizada
 > - Persona e histórias de usuários
 > - Gerenciamento do projeto e os requisitos e restrições do mesmo
+
+[Link para acesso aos slides da apresentação no GitHub](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7946100-projeto-saude/blob/master/Artefatos/slides.pdf)
