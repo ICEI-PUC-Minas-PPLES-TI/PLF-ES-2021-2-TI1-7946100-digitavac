@@ -3,22 +3,22 @@
 <span style="color:red">Pré-requisitos: Todos os demais artefatos</span>
 
 
-> Conjunto de slides em um arquivo PowerPoint ou PDF
-> com a apresentação do projeto contemplando todos os
-> itens trabalhados nos demais artefatos.
+> Clique [aqui](https://docs.google.com/presentation/d/1hc9SGR4I6VpiVtaJwkTZoIJJ3ZdEfgts/edit?usp=sharing&ouid=118354008160748908034&rtpof=true&sd=true) para visualizar o aquivo da apresentação de slides do projeto, usada na entrega de 29/09/2021.
 
 ## Título do Projeto
-> Nome e marca do projeto
+> DigitaVac
 
 ## Identidade Visual (Marca, Design)
-> O grupo deve ter o cuidado em utilizar figuras, imagens, e
-> cores dentro do contexto da solução proposta, de forma a
-> manter a temática do problema.
+> Logo: 
 > 
-> **Links Úteis**:
-> - [10 dicas de design para slides](https://rockcontent.com/blog/design-para-slides/)
-> - [7 dicas de design para criar apresentações de PowerPoint incríveis e eficientes](https://www.shutterstock.com/pt/blog/7-dicas-de-design-para-criar-apresentacoes-de-powerpoint-incriveis-e-eficientes)
-> - [Especialista do TED dá 10 dicas para criar slides eficazes e bonitos](https://soap.com.br/blog/especialista-do-ted-da-10-dicas-para-criar-slides-eficazes-e-bonitos)
+![LOGO](images/logo.png)
+
+> Ícone:
+> 
+![ICONE](images/icon.png)
+
+> Cores bases: AZUL: #004AAD // CINZA 01: #C3C4E1 // CINZA 02: #545454
+
 
 ## Conjunto de Slides (Estrutura)
 > O grupo deve distribuir de forma coerente o conteúdo a ser
