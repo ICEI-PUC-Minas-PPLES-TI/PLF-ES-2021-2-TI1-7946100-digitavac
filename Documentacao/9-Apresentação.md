@@ -21,7 +21,7 @@
 
 
 ## Conjunto de Slides (Estrutura)
-> [Link para acesso aos slides da apresentação no GitHub](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7946100-projeto-saude/blob/master/Artefatos/slides.pdf)
+> [Link para acesso aos slides da apresentação no GitHub](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7946100-projeto-saude/blob/master/Divulgacao/Apresentacao/slides.pdf)
 >
 > Serão apresentados os seguintes tópicos:
 > - Problema e objetivo do projeto
