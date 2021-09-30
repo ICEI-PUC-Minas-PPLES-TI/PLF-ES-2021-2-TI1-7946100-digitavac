@@ -13,7 +13,10 @@
 
 ## User Flow
 
-![Exemplo de UserFlow](images/userflow.jpg)
+![inicial](images/inicial.png)
+
+![Logado](images/logado.png)
+
 
 
 ## Wireframes de Usuário
