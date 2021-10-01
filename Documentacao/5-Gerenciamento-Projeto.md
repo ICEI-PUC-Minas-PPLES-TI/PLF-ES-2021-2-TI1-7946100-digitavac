@@ -16,7 +16,7 @@
 ## Processo
 
 > A equipe atua em sprints semanais para as incrementações do produto. 
-> Semanalmente são feitas reuniões que abordam as atividades de Sprint Planing, Sprint Review e Sprint Retrospective; respectivamente definindo o backlog da próxima sprint, necessidades de adaptação do produto e do processo.   
+> Semanalmente são feitas reuniões que abordam as atividades de Sprint Planning, Sprint Review e Sprint Retrospective; respectivamente definindo o backlog da próxima sprint, necessidades de adaptação do produto e do processo.   
 > 
 > A equipe está utilizando o Miro e um Kanban Board no GitHub para o gerenciamento das tarefas.
 > O [Miro](https://miro.com/app/board/o9J_lxqL3Ls=/) vem sendo utilizado como plataforma de colaboração. Uma ferramenta de brainstorm que vem possibilitando a aglutinação das ideias dos componentes de maneira democrática por meio de Post-its, durante as reuniões e Daily Scrums. Além disso o Miro é a principal ferramenta para a construção da Persona, concepção do usuário final e das características do produto nas atividades dos sprints.
