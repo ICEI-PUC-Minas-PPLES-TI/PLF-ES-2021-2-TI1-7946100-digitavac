@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
+  <script>
+      onload = () =>{
+          prencherValores();
+      }
+  </script>
 <!-- Menu do topo --> 
       <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #41679B;">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,13 +49,15 @@
           <div id="msgEmail"></div>
           <p class="lbl_cadastro">Nome</p>
           <input type="text" id="nome" name="nome" placeholder="Nome" class="form-control box shadow-sm" required>
-          <p class="lbl_cadastro">Senha</p>
-          <input type="password" id="senha" name="senha" placeholder="Senha" class="form-control box shadow-sm" required><br>
+          <p class="lbl_cadastro">Nova senha</p>
+          <input type="password" id="newsenha1" name="senha" placeholder="Senha" class="form-control box shadow-sm" required><br>
+          <p class="lbl_cadastro">Confirmar nova senha</p>
+          <input type="password" id="newsenha2" name="senha" placeholder="Senha" class="form-control box shadow-sm" required><br>
+          <div id="msgNewSenha2"></div>
           <div class="col-md-12 text-center">
-            <a href="login.html" onclick="tentarGravar(event)" type="button" class="btn btn-light shadow" style="margin-bottom: 100px;">Cadastrar</a>
-          </div>
-          <div class="col-md-12 text-center">
-            <a href="editarCadastroSelecao.html" onclick="tentarGravar(event)" type="button" class="btn btn-light shadow" style="margin-bottom: 100px;">Editar cadastro</a>
+            <a href="#" onclick="regravar(event)" type="button" class="btn btn-light shadow" style="margin-bottom: 100px;">Salvar</a>
+            <a href="#" onclick="excluir(event)" type="button" class="btn btn-light shadow" style="margin-bottom: 100px;">Excluir</a>
+
           </div>
         </form>
       </div>

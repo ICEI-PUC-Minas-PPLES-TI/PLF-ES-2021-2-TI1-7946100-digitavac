@@ -18,6 +18,19 @@ email.onblur = () => {
     }
 }
 
+newsenha2.onblur = () => {
+    let mensagemNewSenha2 = document.getElementById("msgNewSenha2");
+
+    if(newsenha1.value !== newsenha2.value){
+        mensagemNewSenha2.style.color = "red";
+        mensagemNewSenha2.style.paddingBottom = "10px";
+        mensagemNewSenha2.innerText = "As senhas devem ser as mesmas";
+    }
+    else{
+        mensagemNewSenha2.innerText = "";
+    }
+}
+
 function leDados () {
     let strDados = localStorage.getItem('db_cadastros');
     let objDados = {};
@@ -33,17 +46,41 @@ function leDados () {
     return objDados;
 }
 
+function lerUser() {
+    let strDados = localStorage.getItem('user');
+    let objDados = {};
+
+    if (strDados) {
+        objDados = JSON.parse (strDados);
+    }
+
+    return objDados;
+}
+
 function tentarGravar(e) {
 
     objDados = leDados();
 
-    strEmail = email.value;
-    strNome = nome.value;
-    strSenha = senha.value;
+    let strEmail = email.value;
+    let strNome = nome.value;
+    let strSenha = senha.value;
 
     let cadatrar  = {email: strEmail, nome: strNome, senha: strSenha}
+    let jaExiste = false;
 
-    objDados.cadastros.push(cadatrar)
+    for(let i = 0; i < objDados.cadastros.length; i++){
+        if(objDados.cadastros[i].email == cadatrar.email){
+            jaExiste = true;
+            alert("Email já cadatrado")
+        }
+    }
+
+    if(strEmail != "" && strNome != "" && strNome != "" && !jaExiste){
+        console.log("Entrei aqui")
+        objDados.cadastros.push(cadatrar)
+        
+    }
+    
 
     salvaDados(objDados)
     console.log("Working")
@@ -51,4 +88,94 @@ function tentarGravar(e) {
 
 function salvaDados (dados) {
     localStorage.setItem ('db_cadastros', JSON.stringify (dados));
+}
+
+function salvarAutentificacao (dados) {
+    localStorage.setItem ('user', JSON.stringify (dados));
+}
+
+function validarEdicao(e){
+    objDados = leDados();
+
+    for(let i=0; i < objDados.cadastros.length; i++){
+        
+        if(email.value == objDados.cadastros[i].email && senha.value == objDados.cadastros[i].senha){
+            window.location.href = "../editaCadatro.html";
+            salvarAutentificacao(objDados.cadastros[i])
+            return;
+        }
+    }
+
+    alert("Usuario e senha não conferem")
+}
+
+function prencherValores(){
+    user = lerUser();
+
+    nome.value = user.nome
+    email.value = user.email
+}
+
+function regravar(e){
+    objDados = leDados();
+    user = lerUser();
+
+    console.log("Aqui")
+    console.log(msgNewSenha2.value)
+    if(msgNewSenha2.value == "" || msgNewSenha2.value == undefined){
+        console.log("Aqui 2")
+        for(let i=0; i < objDados.cadastros.length; i++){
+        
+            if(user.email == objDados.cadastros[i].email && user.senha == objDados.cadastros[i].senha){
+                objDados.cadastros.splice(i,1);
+                salvaDados(objDados);
+            }
+        }
+        console.log("Aqui 3")
+
+        let strEmail = email.value;
+        let strNome = nome.value;
+        let strSenha = newsenha1.value;
+
+        let cadatrar  = {email: strEmail, nome: strNome, senha: strSenha}
+        let jaExiste = false;
+
+        for(let i = 0; i < objDados.cadastros.length; i++){
+            if(objDados.cadastros[i].email == cadatrar.email){
+                jaExiste = true;
+                alert("Email já cadatrado")
+            }
+        }
+
+        if(strEmail != "" && strNome != "" && strNome != "" && !jaExiste){
+            console.log("Entrei aqui")
+            objDados.cadastros.push(cadatrar)
+            
+        }
+    
+        salvaDados(objDados)
+
+        console.log("Aqui 4")
+
+        alert("Dados Autalizados")
+
+        
+        window.location.href = "../login.html";
+    }
+
+}
+
+function excluir(e){
+    objDados = leDados();
+    user = lerUser();
+
+    for(let i=0; i < objDados.cadastros.length; i++){
+        
+        if(user.email == objDados.cadastros[i].email && user.senha == objDados.cadastros[i].senha){
+            objDados.cadastros.splice(i,1);
+            salvaDados(objDados);
+            alert("Usuario" + user.nome + "apagado com sucesso");
+            window.location.href = "../cadastro.html";
+        }
+    }
 }
