@@ -28,7 +28,7 @@
 </head>
 
 <body>
-  <br><br><br>
+  <br><br><br><br><br><br>
   
 
   <div class="container-fluid bg_cadastro">
@@ -36,16 +36,24 @@
       <div class="col-md-4"></div>
       <div class="col-md-4">
         <div class="col-md-12 text-center">
-          <h2 style="margin-bottom: 50px;">Edite sua conta</h2>
+          <h2 style="margin-bottom: 50px;">Crie sua conta</h2>
         </div>
         <form name="cadastro" class="form-group cadastro">
           <p class="lbl_cadastro">Email</p>
           <input type="email" id="email" name="email" placeholder="Email" class="form-control box shadow-sm" required>
           <div id="msgEmail"></div>
+          <p class="lbl_cadastro">Nome</p>
+          <input type="text" id="nome" name="nome" placeholder="Nome" class="form-control box shadow-sm" required>
           <p class="lbl_cadastro">Senha</p>
-          <input type="password" id="senha" name="senha" placeholder="Senha" class="form-control box shadow-sm" required><br>
+          <input type="password" id="senha" name="senha" placeholder="Senha" class="form-control box shadow-sm" required>
+          <p class="lbl_cadastro">Senha pra registro</p>
+          <input type="password" id="senhaPraRegistro" name="senhaPraRegistro" placeholder="senha pra registro" class="form-control box shadow-sm" required>
+          <br>
           <div class="col-md-12 text-center">
-            <a href="#" onclick="validarEdicao(event)" type="button" class="btn btn-light shadow" style="margin-bottom: 100px;">Editar</a>
+            <a href="#" onclick="tentarGravarAdm(event)" type="button" class="btn btnnovo shadow" style="margin-bottom: 50px;">Cadastrar Conta Administrador</a>
+          </div>
+          <div class="col-md-12 text-center">
+            <a href="editarDadosSelecao.html" type="button" class="btn btnnovo shadow" style="margin-bottom: 50px;">Editar dados</a>
           </div>
         </form>
       </div>
@@ -53,12 +61,13 @@
     </div>
   </div><br><br><br>
 
- <footer class="container-fluid" style="background-color: #41679B">
 
-      <div class="footer-sm">
-        <p>&copy DigitaVac 2021</p>
-      </div>
+ <footer>
+
+      <br>
+        <center><p>&copy DigitaVac 2021</p></center>
   </footer>
+
 
   <script type='text/javascript' src="js/cadastro.js"></script>
 </body>
