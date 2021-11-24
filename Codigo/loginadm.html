@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 
 <head>
   <title>Digitavac - login</title>
@@ -67,25 +67,23 @@
 
     <script src="loginadm.js"></script>
     <script>
+
         
-        function fazLogin (event) {       
 
-                event.preventDefault();
+        document.getElementById ('login-form').addEventListener ('submit', event => {
+    event.preventDefault();
 
-                var email = document.getElementById('email').value;
-                var senha = document.getElementById('senha').value;
+var emailtxt = document.getElementById('email').value;
+                var senhatxt = document.getElementById('senha').value;
 
-                validaLogin = fazLogin (email, senha);
+                validaLogin = fazLogin (emailtxt, senhatxt);
                 if (validaLogin) {
                     window.location.href = 'homeadm.html';
                 }
                 else { 
                     alert ('Usuário ou senha informados estão incorretos!');
                 }
-        }
-
-        document.getElementById ('login-form').addEventListener ('submit', fazLogin);
-
+});
 
     </script>
 
