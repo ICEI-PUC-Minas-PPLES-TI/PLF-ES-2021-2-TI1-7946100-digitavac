@@ -153,31 +153,39 @@ Editar  </button>
         </div>
         
         <!-- Modal body -->
+        
+	    <div class="container-fluid bg_cadastro">
         <div class="row">
             <div class="col-md-12"></div>
             <div class="col-md-12">
 
-                <form name="cadastro_historico" class="form-group cadastro">
+                <form name="cadastro_historico" id="cadastroHistorico" class="form-group cadastro">
                     <p class="lbl_cadastro">Vacina</p>
-                    <input type="text" name="nome" placeholder="Nome" class="form-control box shadow-sm" id="vacField" required><br>
+                    <input type="text" onblur="verificaDados()" name="nome" placeholder="Nome" class="form-control box shadow-sm" id="vacField"
+                        required>
 
                     <p class="lbl_cadastro">Data da aplicação</p>
-                    <input type="date" name="data" class="form-control box shadow-sm" id="aplicationField" required><br>
-
+                    <input type="date" onblur="verificaDados()" name="data" class="form-control box shadow-sm" id="aplicationField" required>
 
                     <p class="lbl_cadastro">Data da próxima aplicação</p>
-                    <input type="date" name="data_proxima" class="form-control" id="nextAplicationField" box shadow-sm><br>
-
+                    <input type="date" name="data_proxima" class="form-control" id="nextAplicationField" box shadow-sm>
 
                     <p class="lbl_cadastro">Observações</p>
                     <input type="text" name="obs" placeholder="Digite aqui suas observações"
                         class="form-control box shadow-sm" id="observationField"><br>
+
+                    <div class="col-md-12 text-center">
+                        <button href="historico.html" id="cadastroBtn" onclick="dataAdd(event)" type="button" class="btn btn-light shadow"
+                            style="margin-bottom: 100px;">Cadastrar</button>
+                    </div>
                 </form>
                 
-
             </div>
             <div class="col-md-4"></div>
         </div>
+
+    </div> 
+
         
         <!-- Modal footer -->
         <div class="modal-footer">
