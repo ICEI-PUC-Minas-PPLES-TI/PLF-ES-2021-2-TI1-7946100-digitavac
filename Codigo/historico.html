@@ -7,6 +7,13 @@
   <meta charset="utf-8">
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
   <link rel="stylesheet" type="text/css" href="css/style.css">
   
 
@@ -50,8 +57,8 @@
 
 <body>
   <br><br><br><br>
-
-  <a type="button" class="btn btnnovo" href="novohistorico.html">Adicionar</a> 
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cad-modal">
+Adicionar  </button>
 
 <br><br><br>
 
@@ -70,19 +77,114 @@
       <td scope="row">Coronavac - 1 dose</td>
       <td>29/09/2021</td>
       <td>sim</td>
-      <td><a href="editarhist.html">EDITAR</a>
+      <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
+Editar  </button>
 </td>
     </tr>
     <tr>
       <td scope="row">Coronavac - 2 dose </td>
       <td>14/10/2021</td>
       <td>sim</td>
-      <td><a href="editarhist.html">EDITAR</a>
+      <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
+Editar  </button>
     </tr>
     
   </tbody>
 </table>
 </div>
+
+<!-- Modal de edição -->
+<div class="modal" id="edit-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Editar histórico</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+<div class="row">
+    <div class="col-md-12"></div>
+    <div class="col-md-12">
+      <form name="cadastro_historico" class="form-group cadastro">
+        <p class="lbl_cadastro">Nome</p>
+        <input type="text" name="nome" placeholder="Nome" class="form-control box shadow-sm" required><br>
+        <p class="lbl_cadastro">Data da aplicação</p>
+        <input type="date" name="data" class="form-control box shadow-sm" required><br>
+        <p class="lbl_cadastro">Data da próxima aplicação</p>
+        <input type="date" name="data_proxima" class="form-control box shadow-sm"><br>
+        <p class="lbl_cadastro">Observações</p>
+        <input type="text" name="obs" placeholder="Digite aqui suas observações" class="form-control box shadow-sm"><br>
+
+      </form>
+    </div>
+    <div class="col-md-4"></div>
+  </div>        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" id="btn-excluir" class="btn btn-danger" >Exluir</button>
+          <button type="button" id="btn-edita" class="btn btn-success" >Salvar</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+<!-- fim do modal de edição-->
+
+
+
+  <!-- inicio do modal cadastro -->
+<div class="modal" id="cad-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"> Cadastrar histórico</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="row">
+            <div class="col-md-12"></div>
+            <div class="col-md-12">
+
+                <form name="cadastro_historico" class="form-group cadastro">
+                    <p class="lbl_cadastro">Vacina</p>
+                    <input type="text" name="nome" placeholder="Nome" class="form-control box shadow-sm" id="vacField" required><br>
+
+                    <p class="lbl_cadastro">Data da aplicação</p>
+                    <input type="date" name="data" class="form-control box shadow-sm" id="aplicationField" required><br>
+
+
+                    <p class="lbl_cadastro">Data da próxima aplicação</p>
+                    <input type="date" name="data_proxima" class="form-control" id="nextAplicationField" box shadow-sm><br>
+
+
+                    <p class="lbl_cadastro">Observações</p>
+                    <input type="text" name="obs" placeholder="Digite aqui suas observações"
+                        class="form-control box shadow-sm" id="observationField"><br>
+                </form>
+                
+
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" id="btn-edita" class="btn btn-success" >Salvar</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- fim do modal cadastro -->
 
 
  <br><br><br>
