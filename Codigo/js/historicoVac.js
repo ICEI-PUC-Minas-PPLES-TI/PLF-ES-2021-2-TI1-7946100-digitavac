@@ -5,7 +5,8 @@ function verificaDados() {
     let newDataDaAplicacao = document.getElementById('aplicationField').value;
     if (newVacina != '' && newDataDaAplicacao != '') {
         cadBtn.removeAttribute('disabled');
-    }else{
+    } else 
+    {
         cadBtn.setAttribute('disabled', 'true');
     }
 
@@ -77,7 +78,7 @@ function dataAdd(e) {
 
     let concatenaDateProx = arrayData[0] + '' + arrayData[1] + '' + arrayData[2];
 
-    if ( parseInt(concatenaDateAplic) > parseInt(concatenaDateProx) && newProximaAplicacao != '') {
+    if (parseInt(concatenaDateAplic) > parseInt(concatenaDateProx) && newProximaAplicacao != '') {
         alert("A data da próxima dose deve ser maior que a primeira.");
         return;
     }
