@@ -9,6 +9,34 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   
+<script src="login.js"></script>
+    <script>
+        if (!usuarioAtual) {
+            window.location.href = LLink;
+        }
+
+        function exibe() {
+            
+            let listaUsuarios = '';
+            for (i = 0; i < db_user.user.length; i++) {
+                let usuario = db_user.user[i];
+                listaUsuarios += `<tr><td scope="row">${usuario.nome}</td><td>${usuario.login}</td><td>${usuario.email}</td></tr>`;
+            }
+
+            document.getElementById("table-usuario").innerHTML = listaUsuarios
+
+        }
+
+        function initPage() {
+
+            document.getElementById('btn_logout').addEventListener('click', logoutUser);
+            exibe ();
+        }
+
+        window.addEventListener('load', initPage);
+    </script>
+
+
 
 <!-- Menu do topo --> 
       <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #41679B;">
@@ -27,13 +55,19 @@
 <a class="nav-link" href="home.html"><strong>Home</strong></a>
     </div>
     <div class="col-sm">
+<a class="nav-link" href="calendario.html">Calendário</a>
+    </div>
+    <div class="col-sm">
 <a class="nav-link" href="historico.html">Histórico</a>
+    </div>
+    <div class="col-sm">
+<a class="nav-link" href="info.html">Informações</a>
     </div>
     <div class="col-sm">
 <a class="nav-link" href="config.html">Configurações</a>
     </div>
     <div class="col-sm">
-<a class="nav-link" href="login.html">Sair</a>
+<a class="nav-link" href="login.html" id="btn_logout">Sair</a>
     </div>
 
   </div>
@@ -52,9 +86,13 @@
 </center><br>
 </div>
 
+<center><div id="projetos" class="col-8" style="background-color: #EBBD47;">
+USUÁRIO, você tem uma vacina programada para o dia 05/11/2021. Confira o seu calendário<br> <hr>
+USUÁRIO, há uma nova campanha de vacinação para a terceira dose da vacina contra COVID-19. Confira a notificação no seu email cadastrado.
+</div></center> <br><br><br>
 
 
-  <footer style="bottom:0;">
+  <footer>
 
       <br>
         <center><p>&copy DigitaVac 2021</p></center>
