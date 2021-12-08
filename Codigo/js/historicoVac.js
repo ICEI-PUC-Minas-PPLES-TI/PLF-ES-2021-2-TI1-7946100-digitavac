@@ -44,13 +44,15 @@ function dataPrint() {
     let strHtml = '';
     let objData = dataRead();
 
+
+
     for (i = 0; i < objData.historico.length; i++) {
         strHtml += `<tr>
         <td scope="row">${objData.historico[i].vacina}</td>
         <td>${objData.historico[i].dataDaAplicacao}</td>
         <td>${objData.historico[i].proximaAplicacao}</td>
         <td>${objData.historico[i].observacoes}</td>
-        <td><button type="button" onclick="completeData(${objData.historico[i].id})" class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
+        <td><button type="button" onclick="completeData(${objData.historico[i].id}), saveAuxEdit(${objData.historico[i].id})" class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
             Editar </button>
         </td>
       </tr>`
@@ -75,27 +77,12 @@ function dataAdd(e) {
     let newObservacoes = document.getElementById('observationField').value;
 
 
-    let arrayData = newDataDaAplicacao.split('-');
-    let aplicacaoDate = new Date(arrayData[0], arrayData[1] - 1, arrayData[2])
-
-    let concatenaDateAplic = arrayData[0] + '' + arrayData[1] + '' + arrayData[2];
-
-    arrayData = newProximaAplicacao.split('-');
-    let proximaAplicacaoDate = new Date(arrayData[0], arrayData[1] - 1, arrayData[2])
-
-    let concatenaDateProx = arrayData[0] + '' + arrayData[1] + '' + arrayData[2];
-
-    if (parseInt(concatenaDateAplic) > parseInt(concatenaDateProx) && newProximaAplicacao != '') {
-        alert("A data da próxima dose deve ser maior que a primeira.");
-        return;
-    }
-
     /* inclui as strings no objeto */
     let newObjVac = {
         id: idVac,
         vacina: newVacina,
-        dataDaAplicacao: aplicacaoDate.toLocaleDateString(locale).toString(),
-        proximaAplicacao: proximaAplicacaoDate.toLocaleDateString(locale).toString(),
+        dataDaAplicacao: newDataDaAplicacao,
+        proximaAplicacao: newProximaAplicacao,
         observacoes: newObservacoes
     };
 
@@ -106,22 +93,79 @@ function dataAdd(e) {
     dataPrint();    
 }
 
+function completeData(id) {
+    console.log(id);
+
+    let dbVac = dataRead();
+
+    for (i = 0; i < dbVac.historico.length; i++) {
+
+        if(id == dbVac.historico[i].id)
+        {
+            editVacField.value = dbVac.historico[i].vacina,
+            editAplicationField.value = dbVac.historico[i].dataDaAplicacao,
+            editNextAplicationField.value = dbVac.historico[i].proximaAplicacao,
+            editObservationField.value = dbVac.historico[i].observacoes
+        }
+    }
+}
+
 function deleteData(e) {
 
     objData = dataRead();
 
-    let deleteVac = document.getElementById('vacField').value;
-    let deleteDataDaAplicacao = document.getElementById('aplicationField').value;
+    let deleteVac = document.getElementById('editVacField').value;
+    let deleteDataDaAplicacao = document.getElementById('editAplicationField').value;
 
     for (let i = 0; i < objData.historico.length; i++) {
 
-        if (deleteVac == objData.historico[i].vacina && deleteDataDaAplicacao == objData.historico[i].dataDaAplicacao && deleteVac != '' && deleteDataDaAplicacao != '') {
+        if (deleteVac == objData.historico[i].vacina && deleteDataDaAplicacao == objData.historico[i].dataDaAplicacao) {
+            
             objData.historico.splice(i, 1);
+
             dataSave(objData);
-            alert("Vacina" + historico[i].vacina + "apagado com sucesso");
-            continue;
+            dataPrint();
         }
     }
 
+}
+
+var auxId;
+
+function saveAuxEdit(id)
+{
+    auxId = id;
+}
+
+function editData(e)
+{
+    objData = dataRead();
+
+    let editVac = editVacField.value;
+    let editDataDaAplicacao = editAplicationField.value;
+    let editProximaAplicacao = editNextAplicationField.value;
+    let editObservacoes = editObservationField.value;
+
+    for(i=0; i < objData.historico.length; i++)
+    {
+        if(auxId == objData.historico[i].id)
+        {
+            objData.historico.splice(i, 1);
+            
+            let ObjVac = {
+                id: auxId,
+                vacina: editVac,
+                dataDaAplicacao: editDataDaAplicacao,
+                proximaAplicacao: editProximaAplicacao,
+                observacoes: editObservacoes
+            };
+        
+            objData.historico.push(ObjVac); /* adiciona o novo cadastro ao array histórico */
+        
+            /* salvar no localstorage os novos dados */
+            dataSave(objData);   
+        }
+    }
+    dataPrint();
 }
 
