@@ -22,12 +22,11 @@ function dataRead() {
     }
     else {
         objData = {
-            historico: [{ vacina: "", dataDaAplicacao: "", proximaAplicacao: "", observacoes: "" }]
+            historico: []
         }
     }
 
     return objData;
-
 }
 
 /* salva os dados no database do localstorage */
@@ -39,18 +38,25 @@ function dataSave(data) {
 
 
 /* imprime os dados na página */
-function dataPrint(e) {
+function dataPrint() {
 
-    let screen = document.getElementById('screen');
+    let screen = document.getElementById('screenVac');
     let strHtml = '';
     let objData = dataRead();
 
     for (i = 0; i < objData.historico.length; i++) {
-        strHtml += `<p class="list-group-item list-group-item-action> <strong>Vacina: </strong>${objData.historico[i].vacina}; <strong>Data da aplicação: </strong>${objData.historico[i].dataDaAplicacao}; <strong>Data da aplicação (segunda dose): </strong>${objData.historico[i].proximaAplicacao}; <strong>Observações: </strong> ${objData.historico[i].observacoes}<\p>`
+        strHtml += `<tr>
+        <td scope="row">${objData.historico[i].vacina}</td>
+        <td>${objData.historico[i].dataDaAplicacao}</td>
+        <td>${objData.historico[i].proximaAplicacao}</td>
+        <td>${objData.historico[i].observacoes}</td>
+        <td><button type="button" onclick="completeData(${objData.historico[i].id})" class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
+            Editar </button>
+        </td>
+      </tr>`
     }
 
     screen.innerHTML = strHtml;
-
 }
 
 
@@ -62,6 +68,7 @@ function dataAdd(e) {
     let objData = dataRead();
 
     /* incluir as entradas em cada string */
+    let idVac = objData.historico.length;
     let newVacina = document.getElementById('vacField').value;
     let newDataDaAplicacao = document.getElementById('aplicationField').value;
     let newProximaAplicacao = document.getElementById('nextAplicationField').value;
@@ -85,6 +92,7 @@ function dataAdd(e) {
 
     /* inclui as strings no objeto */
     let newObjVac = {
+        id: idVac,
         vacina: newVacina,
         dataDaAplicacao: aplicacaoDate.toLocaleDateString(locale).toString(),
         proximaAplicacao: proximaAplicacaoDate.toLocaleDateString(locale).toString(),
@@ -95,7 +103,7 @@ function dataAdd(e) {
 
     /* salvar no localstorage os novos dados */
     dataSave(objData);
-
+    dataPrint();    
 }
 
 function deleteData(e) {
