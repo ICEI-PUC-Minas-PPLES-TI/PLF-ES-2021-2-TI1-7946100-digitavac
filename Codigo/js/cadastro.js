@@ -52,14 +52,17 @@ function leDados () {
 }
 
 function lerUser() {
-    let strDados = localStorage.getItem('user');
-    let objDados = {};
+    let strId = sessionStorage.getItem('usuarioAtual')
+    strId = JSON.parse (strId);
+    let strDados = "";
 
-    if (strDados) {
-        objDados = JSON.parse (strDados);
+    dados = leDados();
+
+    for(let i = 0; i < dados.cadastros.length; i++){
+        if(strId.id == dados.cadastros[i].id){
+            return dados.cadastros[i];
+        }
     }
-
-    return objDados;
 }
 
 function tentarGravar(e) {
@@ -142,43 +145,6 @@ function salvarAutentificacao (dados) {
     localStorage.setItem ('user', JSON.stringify (dados));
 }
 
-function validarEdicaoAdm(e){
-    objDados = leDados();
-
-    for(let i=0; i < objDados.cadastros.length; i++){
-        
-        if(email.value == objDados.cadastros[i].email && senha.value == objDados.cadastros[i].senha){
-            if(objDados.cadastros[i].userType == "admin"){
-                window.location.href = "editaCadastroAdm.html";
-                salvarAutentificacao(objDados.cadastros[i])
-                return;
-            }
-            else{
-                alert("Você não tem privilegios pra acessar a página seguinte")
-                return;
-            }
-            
-        }
-    }
-
-    alert("Usuario e senha não conferem")
-}
-
-function validarEdicao(e){
-    objDados = leDados();
-
-    for(let i=0; i < objDados.cadastros.length; i++){
-        
-        if(email.value == objDados.cadastros[i].email && senha.value == objDados.cadastros[i].senha){
-            window.location.href = "editaCadatro.html";
-            salvarAutentificacao(objDados.cadastros[i])
-            return;
-        }
-    }
-
-    alert("Usuario e senha não conferem")
-}
-
 function prencherValores(){
     user = lerUser();
 
@@ -234,9 +200,6 @@ function regravar(e){
         salvaDados(objDados)
 
         alert("Dados Autalizados")
-
-        
-        window.location.href = "cadastro.html";
     }
 
 }
@@ -251,41 +214,9 @@ function excluir(e){
             objDados.cadastros.splice(i,1);
             salvaDados(objDados);
             alert("Usuario" + user.nome + " apagado com sucesso");
-            window.location.href = "cadastro.html";
+            window.location.href = "index.html";
         }
     }
-}
-
-function preenchertabela(){
-
-    db = leDados();
-
-    document.getElementById("table-contatos").innerHTML = "";
-
-    for (i = 0; i < db.cadastros.length; i++) {
-        let contato = db.cadastros[i];
-        if(db.cadastros[i].userType == "user"){
-            document.getElementById("table-contatos").innerHTML += `
-            <tr id="${contato.id}" onclick="manipularTabela(${contato.id})">
-                <td scope="row">${i}</td>
-                <td>${contato.nome}</td>
-                <td>${contato.email}</td>
-                <td>${contato.userType}</td>
-            </tr>`;    
-        }
-        
-    }
-}
-
-let idSelecionado;
-
-function manipularTabela(id){
-    idSelecionado = id;
-
-    let user = SelecionaUsuario();
-
-    email.value = user.email;
-    nome.value = user.nome;
 }
 
 function SelecionaUsuario(){
@@ -295,80 +226,4 @@ function SelecionaUsuario(){
             return db.cadastros[i];
         }
     }
-}
-
-
-function regravarAdm(e){
-    objDados = leDados();
-    user = SelecionaUsuario();
-
-    let senhaAntiga = "";
-    
-    console.log(msgNewSenha2.value)
-    if(msgNewSenha2.value == "" || msgNewSenha2.value == undefined){
-        
-        for(let i=0; i < objDados.cadastros.length; i++){
-        
-            if(user.email == objDados.cadastros[i].email && user.senha == objDados.cadastros[i].senha){
-                senhaAntiga = objDados.cadastros[i].senha;
-                userTypeOld = objDados.cadastros[i].userType;
-                idOld = objDados.cadastros[i].id;
-                objDados.cadastros.splice(i,1);
-                salvaDados(objDados);
-            }
-        }
-
-        let strEmail = email.value;
-        let strNome = nome.value;
-        var strSenha;
-        if(newsenha1.value == "" || newsenha1.value == undefined){
-            strSenha = senhaAntiga;
-        }else{
-            strSenha = newsenha1.value;
-        }
-        
-
-        let cadatrar  = { id: idOld, email: strEmail, nome: strNome, senha: strSenha, userType: userTypeOld}
-        let jaExiste = false;
-
-        for(let i = 0; i < objDados.cadastros.length; i++){
-            if(objDados.cadastros[i].email == cadatrar.email){
-                jaExiste = true;
-                alert("Email já cadatrado")
-            }
-        }
-
-        if(strEmail != "" && strNome != "" && strNome != "" && !jaExiste){
-            
-            objDados.cadastros.push(cadatrar)
-        }
-    
-        salvaDados(objDados)
-
-        alert("Dados Autalizados")
-    }
-
-    newsenha1.value = "";
-    newsenha2.value = "";
-    
-    preenchertabela();
-
-}
-function excluirAdm(e){
-    objDados = leDados();
-    user = SelecionaUsuario();
-
-    for(let i=0; i < objDados.cadastros.length; i++){
-        
-        if(user.email == objDados.cadastros[i].email && user.senha == objDados.cadastros[i].senha){
-            objDados.cadastros.splice(i,1);
-            salvaDados(objDados);
-            alert("Usuario" + user.nome + " apagado com sucesso");
-        }
-    }
-    email.value = "";
-    nome.value = "";
-    newsenha1.value = "";
-    newsenha2.value = "";
-    preenchertabela();
 }

@@ -22,11 +22,11 @@ function generateUUID() {
 }
 
 
-const dadosTeste = {
-    user: [
-        {"id": generateUUID (), "email": "1@1.com", "senha": "123"}
-    ]
-};
+// const dadosTeste = {
+//     cadastros: [
+//         {"id": generateUUID (), "email": "1@1.com", "senha": "123"}
+//     ]
+// };
 
 
 function loginApp () {
@@ -52,8 +52,8 @@ function loginApp () {
 
 function fazLogin (email, senha) {
     
-    for (var i = 0; i < db_cadastros.user.length; i++) {
-        var usuario = db_cadastros.user[i];
+    for (var i = 0; i < db_cadastros.cadastros.length; i++) {
+        var usuario = db_cadastros.cadastros[i];
         
         if (email == usuario.email && senha == usuario.senha) {
             usuarioAtual.id = usuario.id;
