@@ -9,6 +9,38 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   
+<script src="login.js"></script>
+    <script>
+        if (!usuarioAtual.id) {
+            window.location.href = LLink;
+            alert ("Faça login para continuar!");
+        }
+
+        function exibe() {
+            
+            let listaUsuarios = '';
+            for (i = 0; i < db_user.user.length; i++) {
+                let usuario = db_user.user[i];
+                listaUsuarios += `<tr><td scope="row">${usuario.nome}</td><td>${usuario.login}</td><td>${usuario.email}</td></tr>`;
+            }
+
+
+            document.getElementById("table-usuario").innerHTML = listaUsuarios
+
+
+        }
+
+        function initPage() {
+
+            document.getElementById('btn_logout').addEventListener('click', logoutUser);
+
+            exibe();
+        }
+
+        window.addEventListener('load', initPage);
+    </script>
+
+
 
 <!-- Menu do topo --> 
       <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #41679B;">
@@ -21,7 +53,7 @@
     </ul>
     </div>
 
-    <div style:"right:0;">
+    <div style="right:0;">
   <div class="row">
     <div class="col-sm">
 <a class="nav-link" href="home.html"><strong>Home</strong></a>
@@ -33,7 +65,8 @@
 <a class="nav-link" href="config.html">Configurações</a>
     </div>
     <div class="col-sm">
-<a class="nav-link" href="login.html">Sair</a>
+
+<a class="nav-link" id="btn_logout">Sair</a>
     </div>
 
   </div>
@@ -54,7 +87,7 @@
 
 
 
-  <footer style="bottom:0;">
+  <footer>
 
       <br>
         <center><p>&copy DigitaVac 2021</p></center>
