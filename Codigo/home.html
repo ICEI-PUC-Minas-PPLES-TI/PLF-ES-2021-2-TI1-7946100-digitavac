@@ -11,8 +11,9 @@
   
 <script src="login.js"></script>
     <script>
-        if (!usuarioAtual) {
+        if (!usuarioAtual.id) {
             window.location.href = LLink;
+            alert ("Faça login para continuar!");
         }
 
         function exibe() {
@@ -23,14 +24,17 @@
                 listaUsuarios += `<tr><td scope="row">${usuario.nome}</td><td>${usuario.login}</td><td>${usuario.email}</td></tr>`;
             }
 
+
             document.getElementById("table-usuario").innerHTML = listaUsuarios
+
 
         }
 
         function initPage() {
 
             document.getElementById('btn_logout').addEventListener('click', logoutUser);
-            exibe ();
+
+            exibe();
         }
 
         window.addEventListener('load', initPage);
@@ -49,7 +53,7 @@
     </ul>
     </div>
 
-    <div style:"right:0;">
+    <div style="right:0;">
   <div class="row">
     <div class="col-sm">
 <a class="nav-link" href="home.html"><strong>Home</strong></a>
@@ -67,7 +71,8 @@
 <a class="nav-link" href="config.html">Configurações</a>
     </div>
     <div class="col-sm">
-<a class="nav-link" href="login.html" id="btn_logout">Sair</a>
+
+<a class="nav-link" id="btn_logout">Sair</a>
     </div>
 
   </div>
