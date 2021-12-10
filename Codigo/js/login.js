@@ -67,10 +67,12 @@ function fazLogin (email, senha) {
     return false;
 }
 
-function logoutUser () {
+
+function logoutUser (e) {
     usuarioAtual = {};
     sessionStorage.setItem ('usuarioAtual', JSON.stringify (usuarioAtual));
     window.location = LLink;
+    alert ("Saída efetuada com sucesso!");
 }
 
 
