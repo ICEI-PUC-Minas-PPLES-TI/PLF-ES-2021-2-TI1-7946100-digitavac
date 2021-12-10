@@ -6,9 +6,11 @@
 
 * Ferramentas de organização
 > Miro
+> 
 > Figma
 * IDEs
 > Visual Studio Code
+> 
 > Sublime Text
 * Ferramentas de teste
 > Ferramenta de desenvolvedor do Chrome (para verificação de erros)
@@ -16,7 +18,9 @@
 > GitHub
 * Linguagens
 >HTML 5
+>
 >CSS 3
+>
 >JavaScript
 
 ## Arquitetura da solução
