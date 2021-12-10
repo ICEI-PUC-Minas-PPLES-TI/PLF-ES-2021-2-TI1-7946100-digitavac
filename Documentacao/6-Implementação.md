@@ -4,17 +4,17 @@
 
 ## Tecnologias Utilizadas
 
-*Ferramentas de organização
+* Ferramentas de organização
 > Miro
 > Figma
 * IDEs
 > Visual Studio Code
 > Sublime Text
-*Ferramentas de teste
+* Ferramentas de teste
 > Ferramenta de desenvolvedor do Chrome (para verificação de erros)
-*Ferramentas de controle de versão
+* Ferramentas de controle de versão
 > GitHub
-*Linguagens
+* Linguagens
 >HTML 5
 >CSS 3
 >JavaScript
