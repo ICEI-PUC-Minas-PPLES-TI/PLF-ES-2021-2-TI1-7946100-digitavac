@@ -11,4 +11,4 @@
 
 ## User Flow
 
-![Fluxo](images/Tela inicial - Sistema (1).png)
+![Fluxo](images/fluxo.png)
