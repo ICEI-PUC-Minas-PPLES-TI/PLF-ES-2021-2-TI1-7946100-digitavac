@@ -25,31 +25,16 @@
 
 ## Arquitetura da solução
 
-> Inclua um diagrama da solução e descreva os módulos e as tecnologias
-> que fazem parte da solução. Discorra sobre o diagrama.
+A imagem a seguir demostra o fluxo que o usuário percorre no uso da nossa solução. 
 
-A imagem a seguir ilustra a o fluxo do usuário em nossa solução. Assim
-que o usuário entra na plataforma, ele é apresentado à tela inicial
-(Tela 1) onde ele é confrontado com as opões de editar seu perfil ou
-então visualizar sua galeria.
+Depois de acessar o site, o usuário efetua o seu cadastro e posteriormente o login, entrando na home do sistema. 
 
-Caso ele opte por seguir pelo primeiro caminho (Editar Perfil), ele é
-redirecionado para a tela de edição de perfil (Tela 2), onde pode
-atualizar seus dados cadastrais. Nessa tela, o usuário também pode
-escolher para editar sua foto de perfil. Ao selecionar essa opção, ele é
-redirecionado para a Tela 3, onde ele a imagem expandida do perfil do
-usuário é mostrado. Ao selecionar a opção para atualizar a imagem, uma
-nova janela abre pedindo para o usuário fazer o upload da nova foto.
-Assim que o processo termina um pop-up exibe o status para o usuário
-(Tela 4) e o usuário é redirecionado para a Tela 2.
+Caso ele precise editar os dados que cadastrou, pode ir à tela de configurações e realizar todas as alterações necessárias.
 
-Caso o usuário opte seguir pelo segundo caminho (Visualizar Galeria) ele
-é redirecionado para a Tela 5 com todas as fotos que o usuário possui. O
-usuário pode clicar em um post qualquer para visualizar os detalhes do
-post (Tela 6). Nessa tela, ele pode então escolher editar o post, sendo
-redirecionado para a Tela 7. Ao editar as informações, o usuário pode
-escolher salvar ou deletar o post. Em ambos os casos o status é
-notificado para o usuário (Tela 8) e em seguida ele é redirecionado
-para a Tela 2.
+Caso prefira acompanhar suas vacinas ele vai à tela de histórico usando o menu ou o botão da tela inicial do sistema. 
+
+Na listagem ele pode visualizar tudo que foi cadastrado por ele anteriormente e pode escolher editar um registro alterando qualquer dado dele ou mesmo excluindo da listagem, ou ainda pode adicionar uma nova vacina recebida informando os dados básicos da mesma. 
+
+Ele pode sair do sistema clicando no menu Sair. 
 
 ![Exemplo de UserFlow](images/userflow.jpg)
