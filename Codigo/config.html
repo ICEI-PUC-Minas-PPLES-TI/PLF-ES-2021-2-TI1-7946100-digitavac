@@ -15,7 +15,7 @@
       }
   </script>
     
-    <script src="login.js"></script>
+    <script src="js/login.js"></script>
     <script>
         if (!usuarioAtual.id) {
             window.location.href = LLink;
@@ -36,14 +36,6 @@
 
         }
 
-        function initPage() {
-
-            document.getElementById('btn_logout').addEventListener('click', logoutUser);
-
-            exibe();
-        }
-
-        window.addEventListener('load', initPage);
     </script>
 <!-- Menu do topo --> 
         <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #41679B;">
@@ -67,8 +59,8 @@
     <div class="col-sm">
 <a class="nav-link" href="config.html">Configurações</a>
     </div>
-    <div class="col-sm">
-<a class="nav-link" id="btn_logout">Sair</a>
+     <div class="col-sm">
+<a class="nav-link" type="button" onclick="logoutUser(event)" id="btn_logout" style="color: white;">Sair</a>
     </div>
 
   </div>
