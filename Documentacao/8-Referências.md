@@ -1,8 +1,5 @@
 # Referências
 
-> Inclua todas as referências (livros, artigos, sites, etc) utilizados
-> no desenvolvimento do trabalho.
-> 
-> **Links Úteis**:
 > - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+> - [StackOverflow](https://stackoverflow.com/questions/105034/how-to-create-guid-uuid) para a criação de id de sessão do usuário
+> - [StackOverflow](https://pt.stackoverflow.com) para dúvidas pontuais sobre as linguagens utilizadas

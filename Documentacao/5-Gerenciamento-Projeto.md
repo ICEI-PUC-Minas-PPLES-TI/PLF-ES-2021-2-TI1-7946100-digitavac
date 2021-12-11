@@ -8,8 +8,6 @@
 > <strong>Product Owner:</strong> Veridiana Santos <br>
 > <strong> Scrum Master:</strong> Matheus Andrade <br>
 > <strong>Dev Team:</strong> 
-> > * Fabio Silva
-> > * Giovane Diniz
 > > * Matheus Silva
 > > * Thiago Mota
 

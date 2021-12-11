@@ -3,7 +3,7 @@
 <span style="color:red">Pré-requisitos: Todos os demais artefatos</span>
 
 
-> Clique [aqui](https://docs.google.com/presentation/d/1hc9SGR4I6VpiVtaJwkTZoIJJ3ZdEfgts/edit?usp=sharing&ouid=118354008160748908034&rtpof=true&sd=true) para visualizar o aquivo da apresentação de slides do projeto, usada na entrega de 29/09/2021.
+> Clique [aqui](https://docs.google.com/presentation/d/1oL8HW-LMLdUzidLYq7FdEhyTFvYlu1hHm5RKaGcEb20/edit?usp=sharing) para visualizar o aquivo da apresentação de slides do projeto, usada na entrega de 15/12/2021.
 
 ## Título do Projeto
 > DigitaVac
@@ -21,13 +21,13 @@
 
 
 ## Conjunto de Slides (Estrutura)
-> [Link para acesso aos slides da apresentação no GitHub](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7946100-projeto-saude/blob/master/Divulgacao/Apresentacao/slides.pdf)
+> [Link para acesso aos slides da apresentação no GitHub](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7946100-projeto-saude/blob/master/Divulgacao/Apresentacao/Apresentação_final.pdf)
 >
 > Serão apresentados os seguintes tópicos:
-> - Problema e objetivo do projeto
-> - Matriz CSD e mapa de stackholders
-> - Mapoa de empatia
-> - Entrevista qualitativa realizada
-> - Persona e histórias de usuários
-> - Gerenciamento do projeto e os requisitos e restrições do mesmo
+> - O problema 
+> - O objetivo do projeto como solução
+> - Metodologia
+> - Equipe
+> - Status atual
+> - Projeções futuras 
 
