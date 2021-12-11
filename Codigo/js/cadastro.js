@@ -1,4 +1,22 @@
 
+
+// Fonte: https://stackoverflow.com/questions/105034/how-to-create-guid-uuid
+function generateUUID() {
+    var d = new Date().getTime();
+    var d2 = (performance && performance.now && (performance.now()*1000)) || 0;
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = Math.random() * 16;
+        if(d > 0){
+            r = (d + r)%16 | 0;
+            d = Math.floor(d/16);
+        } else {
+            r = (d2 + r)%16 | 0;
+            d2 = Math.floor(d2/16);
+        }
+        return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+    });
+}
+
 //Tratar entradad de nome
 nome.oninput = () => {
     if ('!@#$%ˆ&*()123456789'.indexOf(nome.value.charAt(nome.value.length - 1)) >= 0) {
@@ -40,11 +58,11 @@ function leDados () {
     }
     else {
         objDados = { cadastros: [
-            {id: 0, email: "joao@gmail.com", nome: "João Matheus", senha: "1234", userType:"user"},
-            {id: 1, email: "Vitor@gmail.com", nome: "Vitor Herique", senha: "890", userType:"user"},
-            {id: 2, email: "Jose@gmail.com", nome: "José oliveira", senha: "876", userType:"user"},
-            {id: 3, email: "Matheus@gmail.com", nome: "Matheus Silva", senha: "456", userType:"user"},
-            {id: 4, email: "Marcos@gmail.com", nome: "Marcos Algusto", senha: "4321", userType:"admin"}
+            {id: generateUUID(), email: "joao@gmail.com", nome: "João Matheus", senha: "1234", userType:"user"},
+            {id: generateUUID(), email: "Vitor@gmail.com", nome: "Vitor Herique", senha: "890", userType:"user"},
+            {id: generateUUID(), email: "Jose@gmail.com", nome: "José oliveira", senha: "876", userType:"user"},
+            {id: generateUUID(), email: "Matheus@gmail.com", nome: "Matheus Silva", senha: "456", userType:"user"},
+            {id: generateUUID(), email: "Marcos@gmail.com", nome: "Marcos Algusto", senha: "4321", userType:"admin"}
         ]}
     }
 
@@ -73,7 +91,7 @@ function tentarGravar(e) {
     let strNome = nome.value;
     let strSenha = senha.value;
 
-    let cadatrar  = {id: objDados.cadastros.length, email: strEmail, nome: strNome, senha: strSenha, userType:"user"}
+    let cadatrar  = {id: generateUUID(), email: strEmail, nome: strNome, senha: strSenha, userType:"user"}
     let jaExiste = false;
 
     for(let i = 0; i < objDados.cadastros.length; i++){
@@ -104,7 +122,7 @@ function tentarGravarAdm(e) {
     let strSenha = senha.value;
     let strSenhaPraRegistro = senhaPraRegistro.value;
 
-    let cadatrar  = {id: objDados.cadastros.length,  email: strEmail, nome: strNome, senha: strSenha, userType:"admin"}
+    let cadatrar  = {id: generateUUID(),  email: strEmail, nome: strNome, senha: strSenha, userType:"admin"}
     let jaExiste = false;
 
     for(let i = 0; i < objDados.cadastros.length; i++){
