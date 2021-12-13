@@ -3,12 +3,13 @@
 <span style="color:red">Pré-requisitos: <a href="6-Implementação.md"> Projeto da Solução</a></span>
 
 
-> Apresente os cenários de testes utilizados na realização dos testes da
-> sua aplicação. Escolha cenários de testes que demonstrem os requisitos
-> sendo satisfeitos.
+> Segue nesta seção a documentação com os planos e registros dos testes realizados.
 
 ## Plano de Testes
 <br>
+Segue os requisitos gerais para realização dos testes:
+● Publicação do site na Internet
+● Navegador da Internet (Chrome, Firefox, Opera ou Edge)
 
 CT 01 - Local storage do usuário
 -------
