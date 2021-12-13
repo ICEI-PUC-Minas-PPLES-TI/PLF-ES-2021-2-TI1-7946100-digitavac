@@ -2,9 +2,7 @@
 
 > Para o processo de gestão do código fonte foi utilizado o processo de Git Feature Branch Workflow, processo de fluxo de trabalho onde os desenvolvedores trabalharam na mesma base de código porem em ramificações distintas do mesmo. Sendo assim cada desenvolvedor foi responssável por um artefato e ao concluir recurso este foi adicionado ao código principal sem que haja dependência de artefatos distintos que ainda estão em desenvolvimento.
 
-
-images/Feature-Branch-git-workflow.png
-
+![Persona](images/Feature-Branch-git-workflow.png)
 
 ## Controle de Versão
 
