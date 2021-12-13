@@ -2,7 +2,7 @@
 
 > Para o desenvolvimento do projeto a equipe utilizou a metodologia ágil Scrum. 
 > Aplicando inspeções periódicas a partir dos sprints reviews semanais; e adaptando o projeto de acordo com as necessidades e modificações dos requisitos.
-> Durante o projeto houve significativa redução da equipe, oque afetou significativamente o escopo do software, a metodologia adotada possibilitou o fácil reajuste no dimensionamento do projeto.  
+> Durante o projeto houve significativa redução da equipe, oque afetou o escopo da solução, a metodologia adotada possibilitou o fácil reajuste no dimensionamento do projeto.  
 
 ## Divisão de Papéis
 
@@ -18,7 +18,7 @@
 > Semanalmente foram feitas reuniões que abordaram as atividades de Sprint Planning, Sprint Review e Sprint Retrospective; respectivamente definindo o backlog da próxima sprint, necessidades de adaptação do produto e do processo.   
 > 
 > A equipe utilizou o Miro e um Kanban Board no GitHub para o gerenciamento das tarefas.
-> O [Miro](https://miro.com/app/board/o9J_lxqL3Ls=/) foi utilizado como plataforma de colaboração. Uma ferramenta de brainstorm que vem possibilitando a aglutinação das ideias dos componentes de maneira democrática por meio de Post-its, durante as reuniões e Daily Scrums. As Daily Scrums possibilitaram que a equipe de desenvolvimento se adequasse rapidamente ao novo escopo do projeto, tendo em vista a redução da equipe e o deficit de entregas que houve. Além disso o Miro foi a principal ferramenta para a construção da Persona, concepção do usuário final e das características do produto nas atividades dos sprints.  
+> O [Miro](https://miro.com/app/board/o9J_lxqL3Ls=/) foi utilizado como plataforma de colaboração. Uma ferramenta de brainstorm que vem possibilitando a aglutinação das ideias dos componentes de maneira democrática por meio de Post-its, durante as reuniões e Daily Scrums. As Daily Scrums possibilitaram que a equipe de desenvolvimento se adequasse rapidamente ao novo escopo do projeto, tendo em vista a redução do time de desenvolvimento e o deficit de entregas que houve. Além disso o Miro foi a principal ferramenta para a construção da Persona, concepção do usuário final e das características do produto nas atividades dos sprints.  
 > 
 ![Persona](images/PersonaMiro.jpg)
 <br><strong>Imagem:</strong> Construção da persona no Miro utilizando Post-it.

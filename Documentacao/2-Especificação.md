@@ -58,7 +58,7 @@ As tabelas que a seguir apresentam os requisitos funcionais e não funcionais, e
 |RF-006| O sistema deve indicar as próximas doses cadastradas com antecedência de 7 dias e no dia da vacinação. O aviso deve ser dado por meio de mensagem pop-up e/ou email. | DESCARTADO |
 |RF-007| O sistema deve informar sobre as campanhas de vacinação que estão em andamento ou vão começar. | DESCARTADO |
 |RF-008| O sistema deve prover um menu de configurações. | DESCARTADO |
-|RF-009| O sistema deve prover um sistema de login e logout. | MÉDIA |
+|RF-009| O sistema deve prover um sistema de login e logout. | ALTA |
 
 ### Requisitos não Funcionais
 

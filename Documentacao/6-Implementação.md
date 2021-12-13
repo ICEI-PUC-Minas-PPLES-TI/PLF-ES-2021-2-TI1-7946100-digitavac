@@ -8,6 +8,8 @@
 > Miro
 > 
 > Figma
+> 
+> Kanban
 * IDEs
 > Visual Studio Code
 > 
@@ -24,6 +26,25 @@
 >JavaScript
 
 ## Arquitetura da solução
+
+A solução implementada conta com os seguintes módulos:
+
+> Navegador - Interface básica do sistema 
+> 
+> Páginas Web - Conjunto de arquivos HTML, CSS, JavaScript e imagens que implementam as funcionalidades do sistema.
+> 
+> Local Storage - armazenamento mantido no Navegador, onde são implementados bancos de dados baseados em JSON. São eles:
+> 
+	* Usuários - Armazenamento dos dados das pessoas que se cadastram no sistema;
+
+	* Vacinas - Armazenamento dos dados das vacinas inseridas por usuário;
+		
+> Hospedagem: Plataforma foi hospedada para permitir acesso ao público pelo Replit e GitHub Pages
+> 
+	* URL GitHub Pages:
+   
+	* URL Replit: https://digitavac.veridianathayna.repl.co/
+
 
 A imagem a seguir demostra o fluxo que o usuário percorre no uso da nossa solução. 
 
