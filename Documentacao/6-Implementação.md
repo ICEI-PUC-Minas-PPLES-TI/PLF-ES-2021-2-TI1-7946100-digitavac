@@ -9,7 +9,7 @@
 > 
 > Figma
 > 
-> kanban
+> Kanban
 * IDEs
 > Visual Studio Code
 > 
