@@ -32,7 +32,7 @@ Os dados são apresentados em formato JSON no local storage em db_cadastros.
 
 CT 02 - Teste de login/logout
 ----------
-Requisito associado: RF001, RF009 (Login)
+Requisito associado: RF001, RF009
 
 Objetivo do Teste: Verificar se o login de usuário ocorre e persiste durante a navegação no site e se o logout ocorre.
 
