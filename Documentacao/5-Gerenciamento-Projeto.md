@@ -2,7 +2,7 @@
 
 > Para o desenvolvimento do projeto a equipe utilizou a metodologia ágil Scrum. 
 > Aplicando inspeções periódicas a partir dos sprints reviews semanais; e adaptando o projeto de acordo com as necessidades e modificações dos requisitos.
-> Durante o projeto houve significativa redução da equipe, oque afetou o escopo do software, a metodologia adotada possibilitou o fácil reajuste no dimensionamento do projeto.  
+> Durante o projeto houve significativa redução da equipe, oque afetou o escopo da solução, a metodologia adotada possibilitou o fácil reajuste no dimensionamento do projeto.  
 
 ## Divisão de Papéis
 
