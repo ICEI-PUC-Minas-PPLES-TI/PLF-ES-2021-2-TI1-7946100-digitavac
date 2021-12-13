@@ -8,6 +8,8 @@
 > Miro
 > 
 > Figma
+> 
+> kanban
 * IDEs
 > Visual Studio Code
 > 
