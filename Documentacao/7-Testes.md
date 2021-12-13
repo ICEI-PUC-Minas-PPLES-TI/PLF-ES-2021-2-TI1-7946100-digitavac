@@ -137,7 +137,8 @@ Critérios de êxito:
 
 ## Avaliação
 
-> Os processos de teste tiveram resultados satisfatórios, possibilitaram a verificação de diversos erros, defeitos e falhas dos código fonte. Por terem sido executados desde o início do projeto houve uma redução efetiva no retrabalho do código.
-> As verificações estáticas e dinâmicas executadas possibilitaram a visualização de errors relativas a HTML, CSS e JavaScript que foram eficientemente corrigidos pela equipe de desenvolvimento.
-> Juntos os processo de validação a verificação do software estabeleceram a confiança de que o software está apto para uso dentro do escopo proposto, que sofreu mudanças devido a redução da equipe de desenvolvimento durante o processo. 
-> Vale ressaltar que não foram utilizadas ferramentas para automatizar os testes.
+Os processos de teste tiveram resultados satisfatórios, possibilitaram a verificação de diversos erros, defeitos e falhas dos código fonte. Por terem sido executados desde o início do projeto houve uma redução efetiva no retrabalho do código. As verificações estáticas e dinâmicas executadas possibilitaram a visualização de errors relativas a HTML, CSS e JavaScript que foram eficientemente corrigidos pela equipe de desenvolvimento.
+
+Juntos os processo de validação a verificação do software estabeleceram a confiança de que o software está apto para uso dentro do escopo proposto, que sofreu mudanças devido a redução da equipe de desenvolvimento durante o processo. 
+
+Vale ressaltar que não foram utilizadas ferramentas para automatizar os testes.
