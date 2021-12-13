@@ -30,7 +30,7 @@ etiquetas:
 > Foram utilizados o Repl.it e GithubPage como ambientes de hospedagem do site do projeto.
 Segue os URLs do ambiente onde o site é mantido.
 >
-> 17 Repl.it: https://digitavac.veridianathayna.repl.co/
+> 17Repl.it: https://digitavac.veridianathayna.repl.co/
 >
 > A publicação no site do Repl.it foi feita por meio do import dos arquivos do repositório do GitHub ao criar um novo Repl no site de hospedagem.
 > https://replit.com/
