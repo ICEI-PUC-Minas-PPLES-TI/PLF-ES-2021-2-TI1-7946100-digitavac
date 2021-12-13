@@ -1,9 +1,8 @@
 # Gestão de Configuração
 
-> Nesta parte do documento, você deve apresentar como foi realizada a
-> gestão de configuração do projeto. Isto é, como a ferramenta de
-> controle de versão foi configurada, bem como a hospedagem da
-> plataforma.
+> Para o processo de gestão do código fonte foi utilizado o processo de Git Feature Branch Workflow, processo de fluxo de trabalho onde os desenvolvedores trabalharam na mesma base de código porem em ramificações distintas do mesmo. Sendo assim cada desenvolvedor foi responssável por um artefato e ao concluir recurso este foi adicionado ao código principal sem que haja dependência de artefatos distintos que ainda estão em desenvolvimento.
+
+
 
 ## Controle de Versão
 
