@@ -27,10 +27,14 @@ etiquetas:
 
 ## Hospedagem
 
-> Foram utilizados o Repl.it e GithubPage como ambientes de hospedagem do site do projeto.
+> Foram utilizados o Repl.it e GithubPages como ambientes de hospedagem do site do projeto.
 Segue os URLs do ambiente onde o site é mantido.
 >
 Repl.it: https://digitavac.veridianathayna.repl.co/
 >
 > A publicação no site do Repl.it foi feita por meio do import dos arquivos do repositório do GitHub ao criar um novo Repl no site de hospedagem.
 > https://replit.com/
+> 
+GithubPages: https://icei-puc-minas-pples-ti.github.io/PLF-ES-2021-2-TI1-7946100-projeto-saude/
+>
+>Foi preciso criar um arquivo index.html que redireciona para codigos/index pra que a publicação do github pages funcionasse corretamente. Foi publicado acessando configurações, gitHub pages e selecionado master e root como configurações e clicando em salvar
