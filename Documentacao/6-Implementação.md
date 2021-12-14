@@ -41,7 +41,7 @@ A solução implementada conta com os seguintes módulos:
 		
 > Hospedagem: Plataforma foi hospedada para permitir acesso ao público pelo Replit e GitHub Pages
 > 
-	* URL GitHub Pages:
+	* URL GitHub Pages: https://icei-puc-minas-pples-ti.github.io/PLF-ES-2021-2-TI1-7946100-projeto-saude/ 
    
 	* URL Replit: https://digitavac.veridianathayna.repl.co/
 
