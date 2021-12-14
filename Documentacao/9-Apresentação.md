@@ -27,6 +27,7 @@
 > - O problema 
 > - O objetivo do projeto como solução
 > - Metodologia
+> - Arquitetura
 > - Equipe
 > - Status atual
 > - Projeções futuras 
