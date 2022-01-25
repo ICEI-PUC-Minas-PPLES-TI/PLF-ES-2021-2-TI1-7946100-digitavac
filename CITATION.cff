@@ -1,0 +1,31 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: DigitaVac
+authors:
+  - family-names: Andrade
+    given-names: Matheus 
+  - family-names: Silva
+    given-names: Matheus 
+  - family-names: Mota
+    given-names: Thiago   
+  - family-names: Santos
+    given-names: Veridiana 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Assis Valentim
+    given-names: Nathalia   
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Vieira Carneiro
+    given-names: Rommel 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Alves Nogueira
+    given-names: Simone  
+keywords:
+  - Cartão de Vacinação
+  - Digital
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7946100-digitavac
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2021-12-22
